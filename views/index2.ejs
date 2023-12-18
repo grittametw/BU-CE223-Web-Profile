@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Top : Always on top.</title>
+        <meta name="description" content="profile">
+        <meta name="viewport" content="width=device-width, initial-scal=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main>
+            <header>
+                <nav>
+                    <img class="logo" src="Images/Profile.svg"/>
+                    <div class="links">
+                        <a href="#">About</a>
+                        <a href="#">Docs</a>
+                        <button class="button_med" 
+                        href="#">Login</button>
+                    </div>
+                </nav>
+            </header>
+            <section class="info">
+                <h1 class="hero_font"><%=herofont%></h1>
+                <% objicon.forEach(function(icon) { %>
+                <div class="icons">
+                    <div class="icon">
+                        <img src= <%= icon.img %> >
+                        <div class="icon_info">
+                            <p class="icon_top"><%= icon.top %></p>
+                            <p class="icon_buttom"><%= icon.buttom %></p>
+                        </div>
+                    </div>
+                    <% });%>
+                    <!-- <div class="icon">
+                        <img src="Images/icons8-instagram 1.svg"/>
+                        <div class="icon_info">
+                            <p class="icon_top">gritz.vv</p>
+                            <p class="icon_buttom">Instagram</p>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <img src="Images/icons8-music 1.svg"/>
+                        <div class="icon_info">
+                            <p class="icon_top">Music</p>
+                        </div> 
+                    </div> --> 
+                </div> 
+            </section> 
+            <section class="features">
+                <% objfeature.forEach(function(feature) { %>
+                <div class="feature">
+                    <img src= <%= feature.img %> >
+                    <div class="feature_info">
+                        <p class="feature_top"><%= feature.top %></p>
+                        <p class="feature_bottom"><%= feature.bottom %></p>
+                    </div>
+                </div>
+                <% });%>
+                <!-- <div class="feature">
+                    <img src="Images/robotics.svg">
+                    <div class="feature_info">
+                        <p class="feature_top">Robotics</p>
+                        <p class="feature_bottom">Learn from yesterday live for today and hope for tomorrow.</p>
+                    </div>
+                </div> -->
+                <div class="feature">
+                    <div class="feature_info">
+                        <p class="feature_cta">Learn more</p>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        <script src="" async defer></script>
+    </body>
+</html>
